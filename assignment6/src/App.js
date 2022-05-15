@@ -8,7 +8,7 @@ function App() {
 
   function sortAlpha() {
     let sorted = [].concat(movies)
-    .sort((a, b) => a.title > b.title ? 1 : -1);
+    .sort((a, b) => a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1);
 
     setMovies(sorted);
   }
